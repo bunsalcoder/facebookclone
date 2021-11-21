@@ -2,7 +2,7 @@ new Vue({
     el: '#app',
     data: {
         // BASE URL
-        URL: 'http://localhost:5000/post',
+        URL: 'https://bunsal-facebook.herokuapp.com',
 
         // filter search
         usernameSearch: '',
