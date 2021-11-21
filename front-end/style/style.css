@@ -1,0 +1,375 @@
+/****************************************************************************/
+/*                            khmer-font                                    */
+/****************************************************************************/
+@import url(//db.onlinewebfonts.com/c/5fe1966782f6a72ba54dcbbdab764cd1?family=Khmer+OS+Battambang);
+
+
+/****************************************************************************/
+/*                                v-cloak                                   */
+/****************************************************************************/
+[v-cloak] {
+    display: none;
+}
+
+
+/****************************************************************************/
+/*                                login                                     */
+/****************************************************************************/
+.login{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    width: 45%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 12px;
+    outline: none;
+}
+
+#login::placeholder{
+    text-align: center;
+    font-family: Khmer OS Battambang;
+}
+
+.login button{
+    width: 8%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+    font-family: Khmer OS Battambang;
+    background: #2e81f4;
+    border: none;
+}
+
+.login button:hover{
+    background: #0217d1;
+    color: white;
+}
+
+/****************************************************************************/
+/*                                header                                    */
+/****************************************************************************/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__left img {
+    height: 40px;
+}
+
+.user__avatar {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #f1f2f5;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+    font-family: Khmer OS Battambang;
+    }
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+
+.header__input span{
+    color: grey;
+}
+
+.header__input input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header__middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__option .material-icons {
+    font-size: xx-large;
+    color: gray;
+}
+
+.header__option:hover .material-icons {
+    color: #2e81f4;
+}
+
+.header__option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.header__option.active .material-icons {
+    color: #2e81f4;
+}
+
+.header__option.active {
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header__option:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__info h5 {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right .material-icons {
+    color: gray;
+    margin: 0 10px;
+}
+
+.header__right .material-icons:hover {
+    cursor: pointer;
+}
+
+/****************************************************************************/
+/*                              side-bar                                    */
+/****************************************************************************/
+.sidebar {
+    padding: 25px 10px;
+    flex: 0.33;
+    position: fixed;
+}
+
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebarRow:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.sidebarRow h5 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 580;
+    font-family: Khmer OS Battambang;
+}
+
+.sidebarRow .material-icons {
+    font-size: xx-large;
+    color: #2e81f4;
+}
+
+/****************************************************************************/
+/*                             main-body                                    */
+/****************************************************************************/
+.main__body {
+    display: flex;
+}
+
+body {
+    background-color: #f1f2f5;
+    /* overflow: hidden; */
+}
+
+/****************************************************************************/
+/*                                post                                      */
+/****************************************************************************/
+.loop{
+    width: 70%;
+}
+
+.post {
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 33%;
+    border-radius: 15px;
+    background-color: #f1f2f5;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    font-family: Khmer OS Battambang;
+}
+
+.post__image img {
+    width: 100%;
+    height: 50%;
+}
+
+.post__top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+}
+
+.post__avatar {
+    margin-right: 10px;
+}
+
+.post__topInfo h6 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: Khmer OS Battambang;
+    color: black;
+}
+
+.post__topInfo p {
+    width: 150%;
+    font-size: small;
+    color: gray;
+    font-family: Khmer OS Battambang;
+}
+
+.post__bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    color: black;
+}
+
+.post__options {
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: gray;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.post__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+}
+
+.post__option p {
+    margin-top: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.post__option:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+
+/****************************************************************************/
+/*                                right-side                                */
+/****************************************************************************/
+.right_side {
+    margin-left: 10%;
+    padding: 25px 10px;
+    width: 100%;
+    position: fixed;
+}
+
+.right_side-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right_side-row:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.right_side-row h1 {
+    font-family: Khmer OS Battambang;
+}
+
+.right_side-row h6 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: Khmer OS Battambang;
+}
+
+.right_side-row .material-icons {
+    font-size: xx-large;
+    color: #2e81f4;
+}
+
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { 
+    border-radius: 20rem; margin-left: 20px; background-color: #e4ede6; 
+}
+
+.toggle.ios .toggle-handle { 
+    border-radius: 20rem; 
+}
+
+/****************************************************************************/
+/*                                  modal                                   */
+/****************************************************************************/
+.modal{
+    font-family: Khmer OS Battambang;
+}
+
+.modal-title{
+    color: black;
+}
+
+
+
+/****************************************************************************/
+/*                         edit-remove-button                               */
+/****************************************************************************/
+.edit_button{
+    margin-left: 73%;
+    color: #2e81f4;
+    cursor: pointer;
+}
+
+.remove_button{
+    margin-left: 2%;
+    color: #2e81f4;
+    cursor: pointer;
+}
+
